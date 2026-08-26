@@ -12,13 +12,14 @@ export function Header(){
 
     return(
         <div className="ecommerce-header">
-            <div className="ecommerce-search-container">
+          <div className="ecommerce-header-inner">
+              <div className="ecommerce-search-container">
                 <Search className="ecommerce-search-icon" />
 
                 <input 
                     type="text"
                     placeholder="Search"
-                    className="ecommerece-search-input"
+                    className="ecommerce-search-input"
                 />
                 
             </div>
@@ -41,6 +42,7 @@ export function Header(){
                 </div>
                 Cart
             </div>
+          </div>
         </div>
     )
 }
