@@ -11,7 +11,7 @@ import {
 export function Header(){
 
     return(
-        <div className="ecommerce-header">
+        <header className="ecommerce-header">
           <div className="ecommerce-header-inner">
               <div className="ecommerce-search-container">
                 <Search className="ecommerce-search-icon" />
@@ -43,6 +43,6 @@ export function Header(){
                 Cart
             </div>
           </div>
-        </div>
+        </header>
     )
 }

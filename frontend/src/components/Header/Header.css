@@ -4,6 +4,7 @@
     left: 0;
     width: 100%;
     background-color: black;
+    z-index: 1000;
 }
 
 .ecommerce-header-inner {
@@ -88,8 +89,16 @@
   color: white;
 }
 
+main {
+    padding-top: 60px;
+}
+
 @media (max-width : 1000px){
    .ecommerce-header-actions {
         display: none;
+    }
+
+     main {
+        padding-bottom: 70px;
     }
 }

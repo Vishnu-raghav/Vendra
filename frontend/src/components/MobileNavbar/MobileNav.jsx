@@ -10,24 +10,24 @@
 export function MobileNav(){
     return(
         <>
-        <div className="mobile-nav">
-              <div className="mobile-nav-actions">
+        <nav className="mobile-nav">
+              <button className="mobile-nav-actions">
                 <House className="mobile-nav-actions-icon" />
                 Home
-            </div>
-              <div className="mobile-nav-actions">
+            </button>
+              <button className="mobile-nav-actions">
                 <LayoutGrid className="mobile-nav-actions-icon" />
                 Category  
-            </div>
-              <div className="mobile-nav-actions">
+            </button>
+              <button className="mobile-nav-actions">
                 <User className="mobile-nav-actions-icon" />
-                Acount
-            </div>
-              <div className="mobile-nav-actions">
+                Account
+            </button>
+              <button className="mobile-nav-actions">
                 <ShoppingCart className="mobile-nav-actions-icon" />
                 Cart
-            </div>
-        </div>
+            </button>
+        </nav>
         </>
     )
 }

@@ -24,33 +24,3 @@ img {
   max-width: 100%;
   display: block;
 }
-
-.app-container {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.content-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.mobile-nav {
-    display: none;
-}
-
-@media (max-width: 1000px) {
-
-   
-
-    .mobile-nav {
-        display: flex;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-    }
-}
