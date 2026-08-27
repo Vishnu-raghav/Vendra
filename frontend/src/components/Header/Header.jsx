@@ -24,7 +24,8 @@ export function Header(){
                 
             </div>
 
-            <div className="ecommerce-header-actions">
+            <div className="ecommerce-header-actions-section">
+                   <div className="ecommerce-header-actions">
                 <UserRound className="ecommerce-header-actions-icon" />
                 vishnu
                 <ChevronDown className="ecommerce-header-actions-icon" />
@@ -42,6 +43,10 @@ export function Header(){
                 </div>
                 Cart
             </div>
+
+            </div>
+
+         
           </div>
         </header>
     )

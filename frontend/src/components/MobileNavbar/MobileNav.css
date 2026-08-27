@@ -19,7 +19,7 @@
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     .mobile-nav {
         display: flex;
         position: fixed;
