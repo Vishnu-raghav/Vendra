@@ -1,10 +1,8 @@
 import {Star} from "lucide-react"
 import "./ProductCard.css"
-export function ProductCard(){
 
+export function ProductCard({product}){
     return(
-        <>
-
         <div className="ecommerce-product-card">
             <div className="product-image-container">
                 <img 
@@ -14,21 +12,18 @@ export function ProductCard(){
                  />
                 <div className="product-rating">
                     <Star className="product-rating-icon" />
-                    <span>4.4</span>
+                    <span>{product.rating}</span>
                 </div>
             </div>
             <div className="product-info">
-                <div className="product-name">
                     <h3 className="product-name">
-                        <span className="product-brand-name">Asus</span> Vivobook 14
+                        <span className="product-brand-name">{product.brand}</span>
+                         {product.name}
                     </h3>
-                </div>
-                <div className="product-price">400</div>
+                <div className="product-price">{product.price}</div>
 
             </div>
-
         </div>
         
-        </>
     )
 }
