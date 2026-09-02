@@ -1,0 +1,36 @@
+.ecommerce-dropdown {
+    width: 240px;
+    padding: 16px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+    position: absolute;
+    top: calc(100% + 7px);
+    right: 0;
+    display: none;
+}
+
+
+
+.dropdown-options{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.dropdown-option {
+    padding: 9px 10px;
+    font-size: 14px;
+    color: #374151;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-option:hover {
+    background-color: #f3f4f6;
+    color: #111827;
+}
+
