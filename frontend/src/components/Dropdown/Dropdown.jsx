@@ -1,15 +1,17 @@
 import "./Dropdown.css"
 
 
-export function Dropdown({heading}){
+export function Dropdown({heading, options}){
     return(
         <div className="ecommerce-dropdown">
-            <h4>Account</h4>
+            <h4>{heading}</h4>
             <div className="dropdown-options">
-                <div className="dropdown-option">My Profile</div>
-                <div className="dropdown-option">My Profile</div>
-                <div className="dropdown-option">Orders</div>
-                <div className="dropdown-option">Logout</div>
+                 {options.map((option) => (
+                    <div className="dropdown-option">
+                   {option}
+                </div>        
+                ))}
+                
             </div>
         </div>
     )

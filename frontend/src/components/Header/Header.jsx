@@ -3,6 +3,7 @@ import "./Header.css";
 import { Search, UserRound, ChevronDown, ShoppingCart } from "lucide-react";
 
 export function Header() {
+ 
   return (
     <header className="ecommerce-header">
       <div className="ecommerce-header-inner">
@@ -25,7 +26,15 @@ export function Header() {
             <ChevronDown className="ecommerce-header-actions-icon" />
         </div>
 
-        <Dropdown heading="Account" />
+        <Dropdown heading="Account" options={
+          [
+           "My Profile",
+           "Orders",
+           "Wishlist",
+           "Notification",
+           "Logout"
+          ]
+          }  />
 
     </div>
 
@@ -37,7 +46,9 @@ export function Header() {
             <ChevronDown className="ecommerce-header-actions-icon" />
         </div>
 
-        <Dropdown heading="More" />
+        <Dropdown heading="More" options={
+          ["Become a Seller" , "Notification Setting"]
+          } />
 
     </div>
 
@@ -51,12 +62,7 @@ export function Header() {
 
             Cart
         </div>
-
-        <Dropdown heading="Cart" />
-
     </div>
-
-          
         </div>
 
       </div>
