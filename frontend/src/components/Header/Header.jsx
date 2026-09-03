@@ -1,6 +1,20 @@
 import { Dropdown } from "../Dropdown/Dropdown";
 import "./Header.css";
-import { Search, UserRound, ChevronDown, ShoppingCart } from "lucide-react";
+import { 
+  Search,
+  UserRound,
+  ChevronDown,
+  ShoppingCart,
+  CircleUserRound,
+  Box,
+  Heart,
+  BellRing,
+  LogOut,
+  Store,
+  BellDot
+ } from "lucide-react";
+
+ import {Link} from "react-router-dom"
 
 export function Header() {
  
@@ -28,11 +42,31 @@ export function Header() {
 
         <Dropdown heading="Account" options={
           [
-           "My Profile",
-           "Orders",
-           "Wishlist",
-           "Notification",
-           "Logout"
+            {
+              label: "My Profile",
+              icon : <CircleUserRound />,
+              path : "/profile"
+            },
+              {
+              label: "Orders",
+              icon : <Box />,
+              path : "/orders"
+            },
+            {
+              label: "Wishlist",
+              icon : <Heart />,
+              path : "/wishlist"
+            },
+            {
+              label: "Notification",
+              icon : <BellRing />,
+              path : "/notification"
+            },
+              {
+              label: "Logout",
+              icon : <LogOut />,
+              path : "/logout"
+            },
           ]
           }  />
 
@@ -47,12 +81,24 @@ export function Header() {
         </div>
 
         <Dropdown heading="More" options={
-          ["Become a Seller" , "Notification Setting"]
+          [
+            {
+              label:"Become a Seller",
+              icon:<Store />,
+              path: "/seller"
+            },
+            {
+              label:"Notification Setting",
+              icon:<BellDot />,
+              path : "/setting"
+            }
+          ]
           } />
 
     </div>
 
-         <div className="ecommerce-header-action-wrapper">
+ <Link to="/cart" className="ecommerce-cart-link">
+  <div className="ecommerce-header-action-wrapper">
 
         <div className="ecommerce-header-actions">
             <div className="ecommerce-header-cart-item-numbers">
@@ -63,6 +109,9 @@ export function Header() {
             Cart
         </div>
     </div>
+ 
+ </Link>
+        
         </div>
 
       </div>

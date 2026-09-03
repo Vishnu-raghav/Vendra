@@ -5,4 +5,7 @@
   padding: 0 10px;
 }
 
-
+.ecommerce-cart-link{
+  text-decoration: none;
+  color: inherit;
+}

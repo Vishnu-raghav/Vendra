@@ -67,7 +67,7 @@
   padding: 8px 10px;
   gap: 6px;
   font-size: 12px;
-  cursor:pointer
+  cursor:pointer;
 }
 
 .ecommerce-header-action-wrapper {
@@ -112,6 +112,8 @@
   background-color: red;
   color: white;
 }
+
+
 
 main {
     padding-top: 65px;
