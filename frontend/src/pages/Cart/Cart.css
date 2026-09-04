@@ -1,11 +1,129 @@
 .ecommerce-cart{
-    background-color: rgb(247, 158, 158);
+    display: grid;
+}
+
+.cart-product-details{
+    max-width: 800px;
 }
 
 .address-container{
-    background-color: rgb(247, 162, 176);
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 1.00);
+}
+
+.address-label{
+    background-color: rgb(242, 237, 237);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+
+.user-address{
+    color: rgb(147, 147, 147);
+}
+
+.address-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.address-change-btn{
+    margin-left: auto;
+    border: none;
+    padding: 15px;
+    color: rgb(47, 73, 220);
+    border-radius: 10px;
 }
 
 .cart-detail-container{
-    background-color: blue;
+    background-color: rgba(255, 255, 255, 1.00);
+}
+
+.cart-container{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;   
+} 
+
+.cart-product-image-detail-container{
+    display: flex;
+    gap: 15px;
+}
+
+.cart-image-quatity-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} 
+
+.cart-image{
+    height: 80px;
+    width: 100px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    border: 0.5px solid rgb(176, 174, 174);
+    border-radius: 10px;
+}
+
+.product-image{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.cart-quantity select {
+    width: 60px;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 1px solid rgb(176, 174, 174);
+    border-radius: 8px;
+    background-color: white;
+}
+
+.cart-product-details{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-product-quantity{
+    color: gray;
+}
+
+.cart-product-rating{
+    color: green;
+    margin-bottom: 10px;
+}
+
+.cart-product-price{
+    font-weight:600;
+}
+
+.product-dilvery-date{
+    font-size: 17px;
+}
+
+.remove-product-button-container{
+    height: 40px;
+    border: 1px solid rgb(182, 180, 180);
+    margin-top: 12px;
+}
+
+.remove-button{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    font-weight: 600;
+    color: gray;
 }
