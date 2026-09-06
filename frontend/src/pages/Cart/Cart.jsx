@@ -2,7 +2,8 @@ import "./Cart.css";
 export function Cart() {
   return (
     <div className="ecommerce-cart">
-      <div className="cart-product-details">
+    
+        <div className="cart-product-details">
          <div className="address-container">
         <div className="address-info">
           <div className="address-to">
@@ -10,12 +11,14 @@ export function Cart() {
             <span className="address-label">Home</span>
           </div>
           <div className="user-address">
-            Palla no 1 tilpat fbd haryaan 121003
+            Palla no 1 tilpat fbd haryaan 121002
           </div>
         </div>
 
         <button className="address-change-btn">Change</button>
-      </div>
+         </div>
+
+         
       <div className="cart-detail-container">
         <div className="cart-container">
 
@@ -59,8 +62,29 @@ export function Cart() {
 
       </div>
 
-      <div className="cart-product-"></div>
-     
+   
+
+      
+    
+
+      <div className="cart-checkout">
+  <h3 className="cart-checkout-title">Price Details</h3>
+
+  <div className="price-details">
+    <div className="price-row">
+      <div className="price-label">Price</div>
+      <div className="price-value">₹234</div>
+    </div>
+    <div className="price-row">
+      <div className="price-label">Price</div>
+      <div className="price-value">₹234</div>
+    </div>
+    <div className="price-row">
+      <div className="price-label">Price</div>
+      <div className="price-value">₹234</div>
+    </div>
+  </div>
+      </div>
     </div>
   );
 }

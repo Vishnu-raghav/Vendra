@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    /* background-color: black; */
+    background-color: white;
 }
 
 .ecommerce-header-inner {
@@ -14,7 +14,6 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    background-color: white;
 }
 
 .ecommerce-header-actions-section{
