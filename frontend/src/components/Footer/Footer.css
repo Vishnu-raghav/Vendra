@@ -22,3 +22,9 @@ h3{
     color: white;
     font-size: 300;
 }
+
+@media(max-width : 900px){
+    .ecommerce-footer{
+        display: none;
+    }
+}

@@ -3,10 +3,10 @@
   grid-template-columns: 2fr 1fr;
   gap: 20px;
   width: 100%;
+  align-items: self-start;
 }
 
 .cart-product-details{
-    max-width: 800px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -139,6 +139,9 @@
   border-bottom: 1px solid #e5e5e5;
   margin-top: 12px;
   background-color: rgba(255, 255, 255, 1.00);
+}
+
+.price-detail-rows{
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -151,5 +154,76 @@
 
 .price-label,
 .price-value {
-  font-size: 16px;
+  font-size: 14px;
+}
+
+.product-total{
+    margin-top: 70px;
+    border-top: 1px solid gray;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.saved-amount{
+    background-color: rgb(234, 243, 234);
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 8px;
+    color: green;
+}
+
+.price{
+    color: rgb(2, 108, 2);
+    font-weight: 600;
+}
+
+.cart-checkout{
+    position: sticky;
+    top:60px;
+    align-self: start;
+}
+
+.safe-payment-container{
+    text-align: center;
+    padding: 20px;
+}
+
+.place-order-container{
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 1.00);
+}
+
+.order-button{
+    background-color: rgb(245, 245, 7);
+    padding: 12px 25px;
+    font-size: 13px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+@media(max-width: 900px){
+    .ecommerce-cart{
+         grid-template-columns:  1fr;
+    }
+
+    .place-order-container{
+        position: fixed;
+        bottom: 65px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        left: 0;
+        
+    }
+
+
 }
