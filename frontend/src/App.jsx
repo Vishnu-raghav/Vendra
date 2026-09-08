@@ -10,7 +10,7 @@ import { Header } from "./components/Header/Header";
 import { MobileNav } from "./components/MobileNavbar/MobileNav";
 
 import { Home } from "./pages/Home/Home";
-import { Cart } from "./pages/Cart/Cart";
+import { Checkout } from "./pages/Checkout/Checkout";
 import { Orders } from "./pages/Orders/Orders";
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
             <Route path="/orders" element={<Orders />} />
           </Routes>
 

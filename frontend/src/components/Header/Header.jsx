@@ -97,7 +97,7 @@ export function Header() {
 
     </div>
 
- <Link to="/cart" className="ecommerce-cart-link">
+ <Link to="/checkout" className="ecommerce-cart-link">
   <div className="ecommerce-header-action-wrapper">
 
         <div className="ecommerce-header-actions">
