@@ -1,10 +1,13 @@
 // import { useState } from "react";
 import { PlaceOrderButton } from "../PlaceOrderButton/PlaceOrderBbutton";
+import { useNavigate } from "react-router-dom";
 import "./Cart.css";
-export function Cart({setCheckOutStep}) {
+export function Cart() {
+
+const navigate = useNavigate()
 
   function handleNextStep(){
-    setCheckOutStep("summary")
+    navigate("/checkout/summary")
   }
 
   return (

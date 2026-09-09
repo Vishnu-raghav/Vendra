@@ -10,8 +10,11 @@ import { Header } from "./components/Header/Header";
 import { MobileNav } from "./components/MobileNavbar/MobileNav";
 
 import { Home } from "./pages/Home/Home";
-import { Checkout } from "./pages/Checkout/Checkout";
 import { Orders } from "./pages/Orders/Orders";
+import { CartSummary } from "./components/CartSummary/CartSummary";
+import { CartPayment } from "./components/CartPayemnt/CartPayment";
+import { Cart } from "./components/Cart/Cart";
+import { Checkout } from "./pages/Checkout/Checkout";
 
 function App() {
   return (
@@ -24,7 +27,12 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/checkout" element={<Checkout />}> 
+              <Route index element={<Cart />} />
+              <Route path="summary" element={<CartSummary />} />
+              <Route path="payment" element={<CartPayment />} />
+              {/* <Route path="success" element={<} /> */}
+            </Route>
             <Route path="/orders" element={<Orders />} />
           </Routes>
 
