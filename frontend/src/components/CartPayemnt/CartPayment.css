@@ -1,0 +1,43 @@
+.payemnt-container{
+    background-color: rgba(255, 255, 255, 1.00);
+    border-radius: 12px;
+}
+
+.payment-header{
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.go-back{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.payment-secure{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(255, 238, 238);
+    font-size: 12px;
+    border-radius: 8px;
+    padding: 5px;
+    font-weight: 600;
+    color: gray;
+}
+
+.payment-secure-icon{
+    height: 12px;
+    width: 12px;
+}
+
+.payment-box-entity{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    
+}
