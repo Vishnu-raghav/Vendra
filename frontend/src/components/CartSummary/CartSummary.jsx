@@ -1,5 +1,6 @@
 import { PlaceOrderButton } from "../PlaceOrderButton/PlaceOrderBbutton"
 import { useNavigate } from "react-router-dom"
+import { PriceDetails } from "../PriceDetails/PriceDetails"
 
 export function CartSummary(){
 
@@ -73,55 +74,12 @@ export function CartSummary(){
               </div>
               
             
-              <div className="cart-checkout">
-          <h3 className="cart-checkout-title">Price Details</h3>
-        
-          <div className="price-details">
-          <div className="price-detail-rows">
-              <div className="price-row">
-              <div className="price-label">Price</div>
-              <div className="price-value">₹234</div>
-            </div>
-            <div className="price-row">
-              <div className="price-label">Price</div>
-              <div className="price-value">₹234</div>
-            </div>
-            <div className="price-row">
-              <div className="price-label">Price</div>
-              <div className="price-value">₹234</div>
-            </div>
-        
+          <div className="cart-checkout">
+            <PriceDetails />
+
+            <PlaceOrderButton onPlaceOrder={handleNextStep} />
           </div>
-        
-          <div className="product-total">
-          <div className="price-row">
-              <div className="price-label">Total Amount</div>
-              <div className="price-value">₹234</div>
-            </div>
-        
-            <div className="saved-amount">
-               you save <span className="price">1,345</span> on this order
-            </div>
-        
-          </div>
-          
-        
-        
-        
-          </div>
-        
-            <div className="safe-payment-container">
-              safe and secure payments. Easy return 100% Authentic products
-            </div>
-        
-            {/* <div className="place-order-container">
-              <span className="total-amount">536</span>
-              <button className="order-button">Place order</button>
-            </div> */}
-        
-            <PlaceOrderButton onPlaceOrder = {handleNextStep} />
-              </div>
-        
+                  
             </div>
     )
 }

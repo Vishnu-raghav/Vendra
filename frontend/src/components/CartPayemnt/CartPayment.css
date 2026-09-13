@@ -1,6 +1,21 @@
-.payemnt-container{
+.payment-container {
     background-color: rgba(255, 255, 255, 1.00);
     border-radius: 12px;
+}
+
+.payment-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.payment-methods > :only-child {
+    grid-column: 1 / -1;
 }
 
 .payment-header{
@@ -29,15 +44,64 @@
     color: gray;
 }
 
-.payment-secure-icon{
-    height: 12px;
-    width: 12px;
+.payment-method-item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 0px 20px;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 12px;
+}
+
+.payment-method-icon {
+    width: 20px;
+    height: 20px;
 }
 
 .payment-box-entity{
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 15px;
-    
+    gap: 14px;
+    padding: 15px 20px;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 12px;   
+    border: 1px solid rgb(174, 173, 173);
+}
+
+.payment-box-entity:active{
+    background-color: rgb(208, 207, 207);
+}
+
+.payment-box-icon{
+    height: 20px;
+    width: 20px;
+}
+
+.payment-method-details{
+    padding: 20px;
+    background-color: #f1f3f6;
+    border-radius: 10px;
+}
+
+.payment-method-content{
+   padding: 20px;
+   background-color: rgba(255, 255, 255, 1.00);
+   gap: 5px;
+   border-radius: 7px;
+}
+
+
+.payment-method-title{
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+
+.payment-method-description{
+    font-size: 12px;
+    color: grey;
+    padding: 4px;
+    line-height: 1.6;
+    margin-bottom: 8px;
 }
