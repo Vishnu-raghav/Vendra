@@ -15,33 +15,40 @@ import { CartSummary } from "./components/CartSummary/CartSummary";
 import { CartPayment } from "./components/CartPayemnt/CartPayment";
 import { Cart } from "./components/Cart/Cart";
 import { Checkout } from "./pages/Checkout/Checkout";
+import { CartNavigationProvider } from "./context/CartNavigationContext";
 
 function App() {
   return (
     <BrowserRouter>
 
-      <Header />
+      <CartNavigationProvider>
 
-      <main>
-        <div className="content-container">
+        <Header />
 
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/checkout" element={<Checkout />}> 
-              <Route index element={<Cart />} />
-              <Route path="summary" element={<CartSummary />} />
-              <Route path="payment" element={<CartPayment />} />
-              {/* <Route path="success" element={<} /> */}
-            </Route>
-            <Route path="/orders" element={<Orders />} />
-          </Routes>
+        <main>
+          <div className="content-container">
 
-        </div>
-      </main>
+            <Routes>
 
-      <MobileNav />
+              <Route path="/" element={<Home />} />
 
-      <Footer />
+              <Route path="/checkout" element={<Checkout />}>
+                <Route index element={<Cart />} />
+                <Route path="summary" element={<CartSummary />} />
+                <Route path="payment" element={<CartPayment />} />
+              </Route>
+
+              <Route path="/orders" element={<Orders />} />
+
+            </Routes>
+
+          </div>
+        </main>
+
+        <MobileNav />
+        <Footer />
+
+      </CartNavigationProvider>
 
     </BrowserRouter>
   );

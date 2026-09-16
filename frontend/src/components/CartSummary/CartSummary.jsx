@@ -1,19 +1,15 @@
 import { PlaceOrderButton } from "../PlaceOrderButton/PlaceOrderBbutton"
-import { useNavigate } from "react-router-dom"
 import { PriceDetails } from "../PriceDetails/PriceDetails"
+import { useContext } from "react"
+import { CartNavigationContext } from "../../context/CartNavigationContext";
+
 
 export function CartSummary(){
 
-  const navigate = useNavigate()
-
- 
-    function handleNextStep(){
-        navigate("/checkout/payment")
-    }
+  const {navigateToPayment} = useContext(CartNavigationContext)
 
     return(
          <div className="ecommerce-cart">
-            {/* summary */}
               <div className="cart-product-details">
                  <div className="address-container">
                 <div className="address-info">
@@ -77,7 +73,7 @@ export function CartSummary(){
           <div className="cart-checkout">
             <PriceDetails />
 
-            <PlaceOrderButton onPlaceOrder={handleNextStep} />
+            <PlaceOrderButton onPlaceOrder={navigateToPayment} />
           </div>
                   
             </div>
