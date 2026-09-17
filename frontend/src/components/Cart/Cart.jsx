@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import { PlaceOrderButton } from "../PlaceOrderButton/PlaceOrderBbutton";
+import { PlaceOrderButton } from "../PlaceOrderButton/PlaceOrderButton";
 // import { useNavigate } from "react-router-dom";
 import "./Cart.css";
 import { PriceDetails } from "../PriceDetails/PriceDetails";
@@ -67,8 +67,10 @@ export function Cart() {
 
       <div className="cart-checkout">
         <PriceDetails />
-
+       <div className="place-order-container">
+        <span className="total-amount">536</span>
         <PlaceOrderButton onPlaceOrder={navigateToSummary} />
+       </div>
       </div>
     </div>
   );

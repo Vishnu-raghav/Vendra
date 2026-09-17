@@ -1,4 +1,4 @@
-import { PlaceOrderButton } from "../PlaceOrderButton/PlaceOrderBbutton"
+import { PlaceOrderButton } from "../PlaceOrderButton/PlaceOrderButton"
 import { PriceDetails } from "../PriceDetails/PriceDetails"
 import { useContext } from "react"
 import { CartNavigationContext } from "../../context/CartNavigationContext";
@@ -73,7 +73,13 @@ export function CartSummary(){
           <div className="cart-checkout">
             <PriceDetails />
 
-            <PlaceOrderButton onPlaceOrder={navigateToPayment} />
+
+                <div className="place-order-container">
+                       <span className="total-amount">536</span>
+                       <PlaceOrderButton onPlaceOrder={navigateToPayment} />
+                </div>
+
+
           </div>
                   
             </div>

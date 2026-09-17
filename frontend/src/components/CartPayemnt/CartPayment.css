@@ -32,6 +32,12 @@
     cursor: pointer;
 }
 
+.backToSummaryButton{
+    border: none;
+    background-color: inherit;
+    
+}
+
 .payment-secure{
     display: flex;
     align-items: center;
@@ -104,4 +110,14 @@
     padding: 4px;
     line-height: 1.6;
     margin-bottom: 8px;
+}
+
+.place-order-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-place-order{
+    width: 100%;
 }
