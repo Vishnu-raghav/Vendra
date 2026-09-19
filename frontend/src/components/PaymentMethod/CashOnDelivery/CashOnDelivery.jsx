@@ -1,4 +1,4 @@
-import { PlaceOrderButton } from "../PlaceOrderButton/PlaceOrderButton"
+import { PlaceOrderButton } from "../../PlaceOrderButton/PlaceOrderButton"
 
 export function CashOnDelivery(){
     return(

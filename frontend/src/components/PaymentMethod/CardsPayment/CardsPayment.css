@@ -1,0 +1,56 @@
+.card-detail-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.card-input-container{
+    display: flex;
+    flex : 1;
+    align-items: center;
+}
+
+.card-title{
+    font-size: 15px;
+}
+
+.card-detail-input{
+    padding: 12px 15px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    border: 1px solid red;
+    outline: none;
+}
+
+.card-details{
+    display: flex;
+    gap: 20px;
+}
+
+.card-payment-note{
+    display: flex;
+    margin-top: 15px;
+    gap: 5px;
+}
+
+.card-note{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.note-value{
+    font-size: 13px;
+}
+
+.learn-more{
+    color: rgb(118, 118, 255);
+    font-size: 12px;
+    font-weight: 600;
+}
