@@ -3,7 +3,6 @@ import "./CardsPayment.css";
 
 export function CardsPayment() {
   return (
-
     <div className="card-payment-container">
           <div className="payment-method-content">
       <form action="" className="card-detail-form">
@@ -57,10 +56,8 @@ export function CardsPayment() {
           please ensure your card can be used forn online transaction.
           <span className="learn-more"> Learn More</span>
         </p>
-        
       </div>
 
     </div>
-  
   );
 }

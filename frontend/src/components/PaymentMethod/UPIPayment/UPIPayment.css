@@ -1,0 +1,35 @@
+.upiPayment-conteiner{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    padding: 20px;
+}
+
+.qr-heading{
+    margin: 0;
+}
+
+.QR-code-container{
+ padding: 10px 20px;
+}
+
+.qr-code-box{
+ background-color: red;
+ height: 220px;
+ width: 200px;
+ overflow: hidden;
+}
+
+.qr-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.transaction-precaution{
+ font-size: 12px;
+ color: gray;
+ text-align: center
+}
