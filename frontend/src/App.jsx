@@ -12,7 +12,7 @@ import { MobileNav } from "./components/MobileNavbar/MobileNav";
 import { Home } from "./pages/Home/Home";
 import { Orders } from "./pages/Orders/Orders";
 import { CartSummary } from "./components/CartSummary/CartSummary";
-import { CartPayment } from "./components/CartPayemnt/CartPayment";
+import { CartPayment } from "./components/CartPayment/CartPayment";
 import { Cart } from "./components/Cart/Cart";
 import { Checkout } from "./pages/Checkout/Checkout";
 import { CartNavigationProvider } from "./context/CartNavigationContext";

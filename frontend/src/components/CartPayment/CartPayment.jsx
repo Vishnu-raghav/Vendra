@@ -40,19 +40,23 @@ export function CartPayment() {
       <div className="payment-content">
         <div className="payment-methods">
           <div className="payment-method-item">
-            <div 
+
+            
+            {/* <div 
             onClick={() => setPaymentMethodStep("recommended")}
             className="payment-box-entity"
             >
               <ThumbsUp className="payment-box-icon" />
               Recommended for you
-            </div>
+            </div> */}
+
             <div 
             onClick={() => setPaymentMethodStep("cards")}
             className="payment-box-entity">
               <WalletCards className="payment-box-icon" />
               cards
             </div>
+
             <div 
             onClick={() => setPaymentMethodStep("UPI")}
             className="payment-box-entity">

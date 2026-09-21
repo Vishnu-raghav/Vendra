@@ -1,23 +1,77 @@
 .upiPayment-conteiner{
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 18px;
     align-items: center;
     padding: 20px;
 }
 
+
 .qr-heading{
     margin: 0;
+    color: black;
 }
 
 .QR-code-container{
- padding: 10px 20px;
+ padding: 72px 35px;
+ position: relative;
+ border-radius: 15px;
+}
+
+.QR-overlay{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 105px;
+    inset: 0;
+    width: 100%;
+    right: 0;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgb(94, 207, 255);
+}
+
+.total-upi-amount{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.amount-key{
+    font-size: 12px;
+    color: gray;
+}
+
+.amount-value{
+    font-weight: 600;
+    font-size: 17px;
+}
+
+
+.show-qr-code-button{
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.other-upi-apps{
+font-size: 12px;
+color: gray;
 }
 
 .qr-code-box{
  background-color: red;
- height: 220px;
- width: 200px;
+ height: 180px;
+ width: 180px;
  overflow: hidden;
 }
 
