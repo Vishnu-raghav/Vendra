@@ -12,14 +12,16 @@ import {
 } from "lucide-react";
 import { CartNavigationContext } from "../../context/CartNavigationContext";
 import { PaymentMethod } from "../PaymentMethod/PaymentMethod";
+import { PaymentFooter } from "./PaymentFooter/PaymentFooter";
 
 export function CartPayment() {
-  const [paymentMethodStep, setPaymentMethodStep] = useState("recommended")
+  const [paymentMethodStep, setPaymentMethodStep] = useState("UPI")
 
   const {navigateToSummary} = useContext(CartNavigationContext)
 
   return (
-    <div className="payment-container">
+    <>
+     <div className="payment-container">
       <div className="payment-header">
         <div className="go-back">
           <button
@@ -83,5 +85,9 @@ export function CartPayment() {
         </div>
       </div>
     </div>
+
+    <PaymentFooter />
+    </>
+   
   );
 }

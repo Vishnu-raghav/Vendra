@@ -14,13 +14,21 @@ import {
   BellDot
  } from "lucide-react";
 
- import {Link} from "react-router-dom"
+ import {Link, useLocation} from "react-router-dom"
 
 export function Header() {
+
+  const location = useLocation()
+
+
+  const hideHeaderContent = location.pathname === "/checkout/payment"
  
   return (
     <header className="ecommerce-header">
+     
       <div className="ecommerce-header-inner">
+         {!hideHeaderContent && (
+        <>
         <div className="ecommerce-search-container">
           <Search className="ecommerce-search-icon" />
 
@@ -113,7 +121,8 @@ export function Header() {
  </Link>
         
         </div>
-
+        </>
+      )}
       </div>
     </header>
   );

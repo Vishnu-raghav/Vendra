@@ -1,8 +1,15 @@
 import "./Footer.css"
+import { useLocation } from "react-router-dom"
+
 export function Footer(){
+    
+    const location = useLocation()
+
+    const hideFooterContent = location.pathname === "/checkout/payment"
 
     return(
-        <div className="ecommerce-footer">
+        !hideFooterContent && (
+             <div className="ecommerce-footer">
             <div className="footer-info-section">
                 <h3>About</h3>
                 <div className="footer-info">Contact Us</div>
@@ -23,5 +30,6 @@ export function Footer(){
             </div>
            
         </div>
+        )
     )
 }
