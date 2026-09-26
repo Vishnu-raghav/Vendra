@@ -13,7 +13,7 @@ import { CartNavigationContext } from "../../context/CartNavigationContext";
 import { PaymentMethod } from "../PaymentMethod/PaymentMethod";
 
 export function CartPayment() {
-  const [paymentMethodStep, setPaymentMethodStep] = useState("UPI")
+  const [paymentMethodStep, setPaymentMethodStep] = useState("cards")
 
   const {navigateToSummary} = useContext(CartNavigationContext)
 
@@ -42,20 +42,21 @@ export function CartPayment() {
           <div className="payment-method-item">
             <div 
             onClick={() => setPaymentMethodStep("cards")}
-            className="payment-box-entity">
+            className={`payment-box-entity ${paymentMethodStep === "cards" ? "active" : ""}`}>
               <WalletCards className="payment-box-icon" />
               cards
             </div>
 
             <div 
             onClick={() => setPaymentMethodStep("UPI")}
-            className="payment-box-entity">
+            className={`payment-box-entity ${paymentMethodStep === "UPI" ? "active" : ""}`}
+            >
               <CreditCard className="payment-box-icon" />
               UPI
             </div>
             <div 
             onClick={() => setPaymentMethodStep("cashOnDelivery")}
-            className="payment-box-entity">
+            className={`payment-box-entity ${paymentMethodStep === "cashOnDelivery" ? "active" : ""} `}>
               <IndianRupee className="payment-box-icon" />
               Cash on Delivery
             </div>

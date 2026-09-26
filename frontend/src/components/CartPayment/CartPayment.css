@@ -77,8 +77,8 @@
     border: 1px solid rgb(174, 173, 173);
 }
 
-.payment-box-entity:active{
-    background-color: rgb(208, 207, 207);
+.payment-box-entity.active {
+    background-color: rgb(243, 227, 227);
 }
 
 .payment-box-icon{
