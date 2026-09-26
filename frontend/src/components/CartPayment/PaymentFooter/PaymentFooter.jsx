@@ -1,8 +1,13 @@
 import "./PaymentFooter.css"
+import { useLocation } from "react-router-dom"
 
 export function PaymentFooter(){
+    const location = useLocation()
+
+    const renderPaymentFooter = location.pathname === "/checkout/payment"
     return(
-     <div className="payment-footer">
+    renderPaymentFooter && (
+         <div className="payment-footer">
         <div className="Payment-policies-container">
             policies: 
             <span className="policies">Return Policy</span> |
@@ -18,5 +23,7 @@ export function PaymentFooter(){
             <span className="payment-help-option">Contact Us</span>
         </div>
      </div>
+    )
+    
     )
 }

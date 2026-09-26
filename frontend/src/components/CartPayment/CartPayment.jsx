@@ -1,5 +1,4 @@
 import { useContext, useState } from "react";
-// import { PlaceOrderButton } from "../PlaceOrderButton/PlaceOrderButton";
 import { PriceDetails } from "../PriceDetails/PriceDetails";
 import "./CartPayment.css";
 import {
@@ -12,7 +11,6 @@ import {
 } from "lucide-react";
 import { CartNavigationContext } from "../../context/CartNavigationContext";
 import { PaymentMethod } from "../PaymentMethod/PaymentMethod";
-import { PaymentFooter } from "./PaymentFooter/PaymentFooter";
 
 export function CartPayment() {
   const [paymentMethodStep, setPaymentMethodStep] = useState("UPI")
@@ -20,7 +18,7 @@ export function CartPayment() {
   const {navigateToSummary} = useContext(CartNavigationContext)
 
   return (
-    <>
+    
      <div className="payment-container">
       <div className="payment-header">
         <div className="go-back">
@@ -42,16 +40,6 @@ export function CartPayment() {
       <div className="payment-content">
         <div className="payment-methods">
           <div className="payment-method-item">
-
-            
-            {/* <div 
-            onClick={() => setPaymentMethodStep("recommended")}
-            className="payment-box-entity"
-            >
-              <ThumbsUp className="payment-box-icon" />
-              Recommended for you
-            </div> */}
-
             <div 
             onClick={() => setPaymentMethodStep("cards")}
             className="payment-box-entity">
@@ -85,9 +73,5 @@ export function CartPayment() {
         </div>
       </div>
     </div>
-
-    <PaymentFooter />
-    </>
-   
   );
 }

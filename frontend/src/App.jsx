@@ -16,6 +16,7 @@ import { CartPayment } from "./components/CartPayment/CartPayment";
 import { Cart } from "./components/Cart/Cart";
 import { Checkout } from "./pages/Checkout/Checkout";
 import { CartNavigationProvider } from "./context/CartNavigationContext";
+import { PaymentFooter } from "./components/CartPayment/PaymentFooter/PaymentFooter";
 
 function App() {
   return (
@@ -44,8 +45,9 @@ function App() {
 
           </div>
         </main>
-
+        
         <MobileNav />
+        <PaymentFooter />
         <Footer />
 
       </CartNavigationProvider>

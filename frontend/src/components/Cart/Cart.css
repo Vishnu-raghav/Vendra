@@ -16,7 +16,6 @@
     display: flex;
     align-items: center;
     padding: 20px 22px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     background-color: rgba(255, 255, 255, 1.00);
 }
 
@@ -111,7 +110,7 @@
 }
 
 .product-dilvery-date{
-    font-size: 17px;
+    font-size: 12px;
 }
 
 .remove-product-button-container{
@@ -131,6 +130,10 @@
 .cart-checkout-title {
   margin: 0;
   color: black;
+}
+
+.price-details-title{
+    color: black;
 }
 
 .price-details {
@@ -189,9 +192,8 @@
 .safe-payment-container{
     text-align: center;
     padding: 20px;
+    color: gray;
 }
-
-
 
 @media(max-width: 900px){
     .ecommerce-cart{
@@ -206,9 +208,6 @@
         align-items: center;
         justify-content: space-between;
         z-index: 1000;
-        left: 0;
-        
+        left: 0;   
     }
-
-
 }

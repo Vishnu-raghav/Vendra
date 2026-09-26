@@ -2,6 +2,7 @@ import { PlaceOrderButton } from "../PlaceOrderButton/PlaceOrderButton"
 import { PriceDetails } from "../PriceDetails/PriceDetails"
 import { useContext } from "react"
 import { CartNavigationContext } from "../../context/CartNavigationContext";
+import { CheckoutNavigation } from "../../components/CheckoutNavigation/CheckoutNavigation";
 
 
 export function CartSummary(){
@@ -11,6 +12,7 @@ export function CartSummary(){
     return(
          <div className="ecommerce-cart">
               <div className="cart-product-details">
+                      <CheckoutNavigation />
                  <div className="address-container">
                 <div className="address-info">
                   <div className="address-to">
@@ -24,8 +26,7 @@ export function CartSummary(){
         
                 <button className="address-change-btn">Change</button>
                  </div>
-        
-                 
+      
               <div className="cart-detail-container">
                 <div className="cart-container">
         
@@ -62,9 +63,7 @@ export function CartSummary(){
                     </div>
         
                 </div>
-                  <div className="remove-product-button-container">
-                     <button className="remove-button">Remove</button>
-                  </div>
+                 
               </div>
         
               </div>
