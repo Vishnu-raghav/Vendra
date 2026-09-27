@@ -53,7 +53,44 @@ export function Cart() {
                 </div>
                 <div className="cart-product-quantity">100g</div>
                 <div className="cart-product-rating">4.4</div>
-                <div className="cart-product-price">292</div>
+                <div className="cart-product-price">₹234</div>
+              </div>
+            </div>
+
+            <div className="product-dilvery-date">delivery by Sep 7, Mon</div>
+          </div>
+          <div className="remove-product-button-container">
+            <button className="remove-button">Remove</button>
+          </div>
+        </div>
+        <div className="cart-detail-container">
+          <div className="cart-container">
+            <div className="cart-product-image-detail-container">
+              <div className="cart-image-quatity-container">
+                <div className="cart-image">
+                  <img
+                    src="/product-1.webp"
+                    alt=""
+                    className="product-image"
+                  />
+                </div>
+
+                <div className="cart-quantity">
+                  <select name="quantity" id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="cart-product-details">
+                <div className="cart-product-name">
+                  Hammer Airflow Neo Earbuds with 80H playtime
+                </div>
+                <div className="cart-product-quantity">Grey, True Wireless</div>
+                <div className="cart-product-rating">4.4</div>
+                <div className="cart-product-price">₹599</div>
               </div>
             </div>
 
